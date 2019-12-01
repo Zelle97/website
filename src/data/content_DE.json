@@ -1,0 +1,72 @@
+{
+  "navbar": {
+    "cv": "CV",
+    "languages": {
+      "german": "Deutsch",
+      "english": "Englisch"
+    }
+  },
+
+  "banner": {
+    "text": "Fachinformatiker für Anwendungsentwicklung.\nStudiert momentan an der HTWG Konstanz Angewandte Informatik.",
+    "button": "Kontaktieren"
+  },
+  "cv": {
+    "header": "Curriculum Vitae",
+    "text": "Eine Zusammenfassung meines Lebens.",
+    "timeline": {
+      "first": {
+        "title": "1997",
+        "text": "Geburt"
+      },
+      "second": {
+        "title": "1997",
+        "text": "Birth"
+      },
+      "third": {
+        "title": "1997",
+        "text": "Birth"
+      },
+      "fourth": {
+        "title": "1997",
+        "text": "Birth"
+      },
+      "fifth": {
+        "title": "1997",
+        "text": "Birth"
+      }
+    }
+  },
+  "skills": {
+    "header": "Fähigkeiten",
+    "text": "Eine Zusammenfasssung meiner Fahigkeiten und meines Wissensstandes."
+  },
+  "references": {
+    "header": "Referenzen",
+    "text": "Zusammenfassung meiner Projekte und Referenzen.",
+    "items": {
+      "genAlg": {
+        "title": "Genetischer Algorithmus",
+        "text": "Test Projekt eines genetischen Algorithmuses"
+      },
+      "second": {
+        "title": "Genetic Algorithm",
+        "text": "Research Projekt of a genetic Algorithm"
+      },
+      "third": {
+        "title": "Genetic Algorithm",
+        "text": "Research Projekt of a genetic Algorithm"
+      }
+    }
+  },
+  "contact": {
+    "header": "Kontakt",
+    "text": "Wenn sie mit mir Verbindung aufnehmen wollen füllen sie folgendes Formular aus.",
+    "name": "Name",
+    "ph_name": "Ihr Name",
+    "email": "Email",
+    "ph_email": "example@mail.com",
+    "message": "Nachricht",
+    "ph_message": "Ihre Nachricht"
+  }
+}

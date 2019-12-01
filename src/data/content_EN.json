@@ -1,0 +1,89 @@
+{
+  "navbar": {
+    "cv": "CV",
+    "languages": {
+      "german": "German",
+      "english": "English"
+    }
+  },
+
+  "banner": {
+    "text": "IT-Specialist for Application Development.\nCurrently studying Applied Computer Science at the University for applied Science in Konstanz.",
+    "button": "Get in touch"
+  },
+  "cv": {
+    "header": "Curriculum Vitae",
+    "text": "A summary of my Life.",
+    "timeline": {
+      "first": {
+        "title": "1997",
+        "text": "Birth"
+      },
+      "second": {
+        "title": "1997",
+        "text": "Birth"
+      },
+      "third": {
+        "title": "1997",
+        "text": "Birth"
+      },
+      "fourth": {
+        "title": "1997",
+        "text": "Birth"
+      },
+      "fifth": {
+        "title": "1997",
+        "text": "Birth"
+      }
+    }
+  },
+  "skills": {
+    "header": "Skills",
+    "text": "A Summary of my different Skills and Knowledge base.",
+    "items": {
+      "lang": {
+        "title":"Languages",
+        "1": "German (native)",
+        "2": "English (fluid)",
+        "3": "French (basic)"
+      },
+      "tech": {
+        "title":"Technologies",
+        "1": "Docker"
+      },
+      "prog": {
+        "title":"Programming Lanugages",
+        "1": "Java",
+        "2": "Java Script"
+      }
+    }
+  },
+  "references": {
+    "header": "References",
+    "text": "Overview of my Projects and References.",
+    "items": {
+      "genAlg": {
+        "title": "Genetic Algorithm",
+        "text": "Research Projekt of a genetic Algorithm"
+      },
+      "second": {
+        "title": "Genetic Algorithm",
+        "text": "Research Projekt of a genetic Algorithm"
+      },
+      "third": {
+        "title": "Genetic Algorithm",
+        "text": "Research Projekt of a genetic Algorithm"
+      }
+    }
+  },
+  "contact": {
+    "header": "Contact",
+    "text": "In case you want to contact me fill out the following form.",
+    "name": "Name",
+    "ph_name": "Your Name",
+    "email": "Email",
+    "ph_email": "example@mail.com",
+    "message": "Message",
+    "ph_message": "Your message"
+  }
+}
