@@ -10,14 +10,16 @@
 
       </div>
 
-      <form id="contact-form" @submit="submitForm">
+      <form id="contact-form" @submit="">
 
         <b-field :label="$t('contact.name')">
-          <b-input v-model="senderName" type="name" required="required" :placeholder="$t('contact.ph_name')"></b-input>
+          <b-input id="form-name" v-model="senderName" type="name" required="required"
+                   :placeholder="$t('contact.ph_name')"></b-input>
         </b-field>
 
         <b-field :label="$t('contact.email')">
-          <b-input v-model="fromMail"
+          <b-input id="form-mail"
+                   v-model="fromMail"
                    type="email"
                    icon="email"
                    :placeholder="$t('contact.ph_email')">
@@ -25,40 +27,72 @@
         </b-field>
 
         <b-field :label="$t('contact.message')">
-          <b-input v-model="content" maxlength="600" type="textarea" required="required"
+          <b-input id="form-message" v-model="content" maxlength="600" type="textarea" required="required"
                    :placeholder="$t('contact.ph_message')"></b-input>
         </b-field>
 
         <div class="has-text-centered">
-          <b-button type="is-info"
-                    outlined
-                    native-type="submit"
-                    rounded>
-            Submit
-          </b-button>
+          <vue-recaptcha
+            ref="recaptcha"
+            sitekey="6Ledt8UUAAAAAEh1smA69WF4f8TsSXve6Wl5BO_J"
+            @verify="onCaptchaVerified">
+            <b-button type="is-info"
+                      outlined
+                      rounded>
+              Submit
+            </b-button>
+          </vue-recaptcha>
+
         </div>
 
       </form>
+
     </div>
   </section>
 </template>
 
 <script>
+
+  import axios from "axios";
+  import VueRecaptcha from "vue-recaptcha"
+
   export default {
     name: "Contact",
+    components: {VueRecaptcha},
     data() {
       return {
+        loading: false,
         "senderName": "",
         "fromMail": "",
         "content": ""
       }
     },
     methods: {
-      submitForm: function () {
-        console.log(this.senderName)
-        console.log(this.fromMail)
-        console.log(this.content)
+      onCaptchaVerified: function (token) {
+        if (this.verifyInput()) {
+          this.verifyToken(token);
+        } else {
+          this.showInputErrors();
+          this.$refs.recaptcha.reset();
+        }
       },
+      verifyInput: function () {
+        return document.getElementById("form-name").checkValidity() &&
+          document.getElementById("form-mail").checkValidity() &&
+          document.getElementById("form-message").checkValidity();
+      },
+      showInputErrors: function () {
+        document.getElementById("form-name").reportValidity();
+        document.getElementById("form-mail").reportValidity();
+        document.getElementById("form-message").reportValidity();
+      },
+      verifyToken: function (token) {
+        this.$buefy.toast.open({
+          message: 'Something happened correctly!',
+          type: 'is-success'
+        })
+        console.log(token)
+      }
     }
   }
 </script>
