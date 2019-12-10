@@ -9,16 +9,18 @@
         {{$t("skills.text")}}
       </h2>
 
-      <div class="level">
+
+      <b-tabs position="is-centered" class="block">
         <div v-for="skill in skills">
-          <skill-category :title="$t('skills.items.'+skill.name+'.title')"
-                          :skillName="skill.name"
-                          :items="skill.items">
-          </skill-category>
+          <b-tab-item :label="$t('skills.items.'+skill.name+'.title')">
+            <div class="progress-wrapper" v-for="item in skill.items">
+              <b-progress type="is-info" :value="80" size="is-large" show-value>
+                {{$t('skills.items.'+skill.name+'.'+item)}}
+              </b-progress>
+            </div>
+          </b-tab-item>
         </div>
-      </div>
-
-
+      </b-tabs>
     </div>
     <hr>
   </section>
@@ -26,17 +28,15 @@
 
 <script>
 
-  import SkillCategory from "../components/SkillCategory";
 
   export default {
     name: "Skills",
-    components: {SkillCategory},
     data() {
       return {
         "skills": [
           {
             "name": "lang",
-            "items": ["1","2","3"]
+            "items": ["1", "2", "3"]
           },
           {
             "name": "tech",
@@ -44,7 +44,7 @@
           },
           {
             "name": "prog",
-            "items": ["1","2"]
+            "items": ["1", "2"]
           }
         ]
       }
