@@ -9,13 +9,12 @@
         {{$t("skills.text")}}
       </h2>
 
-
       <b-tabs position="is-centered" class="block">
         <div v-for="skill in skills">
           <b-tab-item :label="$t('skills.items.'+skill.name+'.title')">
             <div class="progress-wrapper" v-for="item in skill.items">
-              <b-progress type="is-info" :value="80" size="is-large" show-value>
-                {{$t('skills.items.'+skill.name+'.'+item)}}
+              <b-progress type="is-info" :value="item.value" size="is-large" show-value>
+                {{$t('skills.items.'+skill.name+'.'+item.index)}}
               </b-progress>
             </div>
           </b-tab-item>
@@ -28,7 +27,6 @@
 
 <script>
 
-
   export default {
     name: "Skills",
     data() {
@@ -36,15 +34,42 @@
         "skills": [
           {
             "name": "lang",
-            "items": ["1", "2", "3"]
+            "items": [
+              {
+                "index": "1",
+                "value": 100
+              },
+              {
+                "index": "2",
+                "value": 90
+              },
+              {
+                "index": "3",
+                "value": 20
+              }
+            ]
           },
           {
             "name": "tech",
-            "items": ["1"]
+            "items": [
+              {
+                "index": "1",
+                "value": 80
+              }
+            ]
           },
           {
             "name": "prog",
-            "items": ["1", "2"]
+            "items": [
+              {
+                "index": "1",
+                "value": 80
+              },
+              {
+                "index": "2",
+                "value": 60
+              }
+            ]
           }
         ]
       }
