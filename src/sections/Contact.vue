@@ -73,6 +73,7 @@
           this.verifyToken(token);
         } else {
           this.showInputErrors();
+          this.showError(this.$t('contact.form_input_error'));
           this.$refs.recaptcha.reset();
         }
       },
@@ -87,11 +88,33 @@
         document.getElementById("form-message").reportValidity();
       },
       verifyToken: function (token) {
+        let that = this;
+        axios.post('https://backend.zellerfabian.de/submitForm', {
+          senderName: this.senderName,
+          fromMail: this.fromMail,
+          content: this.content,
+          "g-recaptcha-response": token
+        })
+          .then(function (response) {
+            that.showSuccess(that.$t('contact.form_submit_success'))
+          })
+          .catch(function (error) {
+            that.showError(that.$t('contact.form_submit_error'))
+          })
+      },
+      showError: function (message) {
         this.$buefy.toast.open({
-          message: 'Something happened correctly!',
+          message: message,
+          position: 'is-bottom-left',
+          type: 'is-danger'
+        })
+      },
+      showSuccess: function (message) {
+        this.$buefy.toast.open({
+          message: message,
+          position: 'is-bottom-right',
           type: 'is-success'
         })
-        console.log(token)
       }
     }
   }
