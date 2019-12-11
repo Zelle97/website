@@ -6,7 +6,15 @@
     <skills></skills>
     <references></references>
     <contact></contact>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>TODO</strong> write some content in the footer!
+        </p>
+      </div>
+    </footer>
   </div>
+
 </template>
 
 <script>
