@@ -16,7 +16,7 @@
           <b-button type="is-info"
                     outlined
                     rounded>
-            <a href="#contact">{{ $t("banner.button")}}</a>
+            <a href="#contact" class="has-text-black">{{ $t("banner.button")}}</a>
           </b-button>
         </div>
       </footer>
