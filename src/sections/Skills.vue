@@ -33,6 +33,27 @@
       return {
         "skills": [
           {
+            "name": "tech",
+            "items": [
+              {
+                "index": "1",
+                "value": 75
+              },
+              {
+                "index": "2",
+                "value": 80
+              },
+              {
+                "index": "3",
+                "value": 60
+              },
+              {
+                "index": "4",
+                "value": 85
+              }
+            ]
+          },
+          {
             "name": "lang",
             "items": [
               {
@@ -50,15 +71,6 @@
             ]
           },
           {
-            "name": "tech",
-            "items": [
-              {
-                "index": "1",
-                "value": 80
-              }
-            ]
-          },
-          {
             "name": "prog",
             "items": [
               {
@@ -68,6 +80,18 @@
               {
                 "index": "2",
                 "value": 60
+              },
+              {
+                "index": "3",
+                "value": 40
+              },
+              {
+                "index": "4",
+                "value": 20
+              },
+              {
+                "index": "5",
+                "value": 20
               }
             ]
           }

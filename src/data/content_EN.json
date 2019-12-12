@@ -6,7 +6,11 @@
       "english": "English"
     }
   },
-
+  "footer": {
+    "text": "This Website was developed by",
+    "with": "with",
+    "and": "and"
+  },
   "banner": {
     "text": "IT-Specialist for Application Development.\nCurrently studying Applied Computer Science at the University for applied Science in Konstanz.",
     "button": "Get in touch"
@@ -17,23 +21,23 @@
     "timeline": {
       "first": {
         "title": "1997",
-        "text": "Birth"
+        "text": "Birth in Germany"
       },
       "second": {
-        "title": "1997",
-        "text": "Birth"
+        "title": "2016 - General Qualification for University Entrance",
+        "text": "Hohentwiel Vocational School Singen (Technical Highschool)"
       },
       "third": {
-        "title": "1997",
-        "text": "Birth"
+        "title": "2016 - Begin Apprenticeship as Softwaredeveloper",
+        "text": "Apprenticeship as Softwaredeveloper for Application development at Sybit Gmbh Radolfzell"
       },
       "fourth": {
-        "title": "1997",
-        "text": "Birth"
+        "title": "2019",
+        "text": "Certified Softwaredeveloper for Application development"
       },
       "fifth": {
-        "title": "1997",
-        "text": "Birth"
+        "title": "2019 - Begin Studying applied Computer Science",
+        "text": "Studying at Constance University of applied Science"
       }
     }
   },
@@ -41,20 +45,26 @@
     "header": "Skills",
     "text": "A Summary of my different Skills and Knowledge base.",
     "items": {
+      "tech": {
+        "title": "Technologies and Frameworks",
+        "1": "Ant/Maven/Gradle",
+        "2": "Spring/Spring Boot",
+        "3": "SAP Hybris",
+        "4": "Docker"
+      },
       "lang": {
-        "title":"Languages",
+        "title": "Languages",
         "1": "German (native)",
         "2": "English (fluid)",
         "3": "French (basic)"
       },
-      "tech": {
-        "title":"Technologies",
-        "1": "Docker"
-      },
       "prog": {
-        "title":"Programming Lanugages",
+        "title": "Programming Lanugages",
         "1": "Java",
-        "2": "Java Script"
+        "2": "Java Script",
+        "3": "Shell/Bash/Batch",
+        "4": "Python",
+        "5": "Rust"
       }
     }
   },
@@ -67,12 +77,12 @@
         "text": "Research Projekt of a genetic Algorithm"
       },
       "second": {
-        "title": "Genetic Algorithm",
-        "text": "Research Projekt of a genetic Algorithm"
+        "title": "This Website",
+        "text": "The source Code of this Website."
       },
       "third": {
-        "title": "Genetic Algorithm",
-        "text": "Research Projekt of a genetic Algorithm"
+        "title": "Airtable.java",
+        "text": "A Airtable Java API developed while my Apprenticeship."
       }
     }
   },

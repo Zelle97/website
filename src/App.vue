@@ -8,9 +8,18 @@
     <contact></contact>
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>
-          <strong>TODO</strong> write some content in the footer!
+        <p class="text">
+          {{ $t("footer.text") }} <a href="https://github.com/Zelle97"> Fabian Zeller</a> {{ $t("footer.with") }} <a
+          href="https://vuejs.org/">Vue.js</a> {{
+          $t("footer.and") }} <a href="https://buefy.org/">Buefy</a>.
         </p>
+        <div>
+          <p class="text">&#169; {{currentYear}} Fabian Zeller</p>
+          <!--          <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"/>-->
+          <!--          <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg"/>-->
+          <!--          <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"/>-->
+          <!--          <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg"/>-->
+        </div>
       </div>
     </footer>
   </div>
@@ -30,8 +39,16 @@
     components: {Banner, References, Skills, CV, Contact, Navbar},
     data() {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        currentYear: ''
       }
+    },
+    methods: {
+      getCurrentYear: function () {
+        return new Date().getFullYear();
+      }
+    },
+    mounted() {
+      this.currentYear = this.getCurrentYear();
     }
   }
 </script>
@@ -76,8 +93,6 @@
     position: absolute;
     transform: translateY(-50vh);
   }
-
-
 
 
 </style>

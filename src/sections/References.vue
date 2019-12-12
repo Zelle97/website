@@ -31,14 +31,14 @@
         references: [
           {
             name: "genAlg",
-            link: "link"
+            link: "https://github.com/Zelle97/GeneticAlgorithm"
           },
           {
             name: "second",
-            link: "link"
+            link: "https://github.com/Zelle97"
           }, {
             name: "third",
-            link: "link"
+            link: "https://github.com/Sybit-Education/airtable.java"
           },]
       }
     }
