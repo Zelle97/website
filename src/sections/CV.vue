@@ -3,10 +3,10 @@
     <div class="container has-text-centered">
       <span class="anchor" id="cv"></span>
       <h1 class="title">
-        Curriculum Vitae
+        {{ $t("cv.header") }}
       </h1>
       <h2 class="subtitle">
-        A summary of my Life.
+        {{ $t("cv.text") }}
       </h2>
       <div class="timeline">
         <div class="timeline__wrap">

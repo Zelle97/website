@@ -3,10 +3,10 @@
     <div class="container has-text-centered">
       <span class="anchor" id="references"></span>
       <h1 class="title">
-        References
+        {{ $t("references.header") }}
       </h1>
       <h2 class="subtitle">
-        Overview of my Projects and References.
+        {{ $t("references.text") }}
       </h2>
       <div class="level">
         <div class="level-item" v-for="reference in references">

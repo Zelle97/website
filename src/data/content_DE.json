@@ -1,61 +1,88 @@
 {
   "navbar": {
-    "cv": "CV",
+    "cv": "Lebenslauf",
     "languages": {
       "german": "Deutsch",
       "english": "Englisch"
     }
   },
-
+  "footer": {
+    "text": "Diese Webseite wurde enwickelt von",
+    "with": "mit",
+    "and": "und"
+  },
   "banner": {
     "text": "Fachinformatiker für Anwendungsentwicklung.\nStudiert momentan an der HTWG Konstanz Angewandte Informatik.",
     "button": "Kontaktieren"
   },
   "cv": {
-    "header": "Curriculum Vitae",
+    "header": "Lebenslauf",
     "text": "Eine Zusammenfassung meines Lebens.",
     "timeline": {
       "first": {
         "title": "1997",
-        "text": "Geburt"
+        "text": "Geburt in Deutschland"
       },
       "second": {
-        "title": "1997",
-        "text": "Birth"
+        "title": "2016 - Allgemeine Fachhochschulreife",
+        "text": "Hohentwiel Gewerbeschule Singen (Technisches Gymnasium)"
       },
       "third": {
-        "title": "1997",
-        "text": "Birth"
+        "title": "2016 - Begin Ausbildung zum Fachinformatiker",
+        "text": "Ausbildung als Fachinformatiker für Anwendungsenticklung bei Sybit GmbH Radolfzell"
       },
       "fourth": {
-        "title": "1997",
-        "text": "Birth"
+        "title": "2019",
+        "text": "Abschluss der Ausbildung als Fachinformatiker für Anwendungsentwicklung"
       },
       "fifth": {
-        "title": "1997",
-        "text": "Birth"
+        "title": "2019 - Begin Studium der Angewandten Informatik",
+        "text": "Studium an der HTWG Konstanz"
       }
     }
   },
   "skills": {
     "header": "Fähigkeiten",
-    "text": "Eine Zusammenfasssung meiner Fahigkeiten und meines Wissensstandes."
+    "text": "Eine Zusammenfasssung meiner Fahigkeiten und meines Wissensstandes",
+    "items": {
+      "tech": {
+        "title": "Technologien and Frameworks",
+        "1": "Ant/Maven/Gradle",
+        "2": "Spring/Spring Boot",
+        "3": "SAP Hybris",
+        "4": "Docker"
+      },
+      "lang": {
+        "title": "Sprachen",
+        "1": "Deutsch (muttersprache)",
+        "2": "English (fliesend)",
+        "3": "French (Grundlagen)"
+      },
+      "prog": {
+        "title": "Programmiersprachen",
+        "1": "Java",
+        "2": "Java Script",
+        "3": "Shell/Bash/Batch",
+        "4": "Python",
+        "5": "Rust"
+      }
+    }
   },
   "references": {
     "header": "Referenzen",
-    "text": "Zusammenfassung meiner Projekte und Referenzen.",
+    "text": "Zusammenfassung meiner Projekte und Referenzen",
     "items": {
       "genAlg": {
         "title": "Genetischer Algorithmus",
         "text": "Test Projekt eines genetischen Algorithmuses"
       },
       "second": {
-        "title": "Genetic Algorithm",
-        "text": "Research Projekt of a genetic Algorithm"
+        "title": "Diese Webseite",
+        "text": "Der source code dieser Webseite"
       },
       "third": {
-        "title": "Genetic Algorithm",
-        "text": "Research Projekt of a genetic Algorithm"
+        "title": "Airtable.java",
+        "text": "Eine Java API für Airtable die während meiner Ausbildung entstanden ist"
       }
     }
   },
@@ -67,6 +94,10 @@
     "email": "Email",
     "ph_email": "example@mail.com",
     "message": "Nachricht",
-    "ph_message": "Ihre Nachricht"
+    "ph_message": "Ihre Nachricht",
+    "form_input_error": "Bitte überprüfen sie ihre Eingaben!",
+    "form_submit_error": "Es ist ein Fehler mit ihrem Formular aufgetreten! Bitte versuchen sie es erneut.",
+    "form_submit_success": "Vielen Dank! Ihre Nachricht wurde versendet.",
+    "submit_button": "Senden"
   }
 }

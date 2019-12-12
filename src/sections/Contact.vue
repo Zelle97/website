@@ -39,7 +39,7 @@
             <b-button type="is-info"
                       outlined
                       rounded>
-              Submit
+              {{ $t("contact.submit_button") }}
             </b-button>
           </vue-recaptcha>
 

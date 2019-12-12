@@ -97,6 +97,7 @@
     "ph_message": "Your message",
     "form_input_error": "Please check your inputs!",
     "form_submit_error": "There was an Error with your Form! Please try again.",
-    "form_submit_success": "Thank You! Your Form has been submitted."
+    "form_submit_success": "Thank You! Your Form has been submitted.",
+    "submit_button": "Submit"
   }
 }
