@@ -45,7 +45,7 @@
       timeline.timelineFunction(document.querySelectorAll('.timeline'), {
         mode: 'horizontal',
         visibleItems: 4,
-        forceVerticalWidth: 800
+        forceVerticalWidth: 600
       });
     }
   }
