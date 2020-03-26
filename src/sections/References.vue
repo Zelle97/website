@@ -10,7 +10,8 @@
       </h2>
       <div class="level">
         <div class="level-item" v-for="reference in references">
-          <reference-card :title="$t('references.items.'+reference.name+'.title')"
+          <reference-card v-observe-visibility="visibilityChanged"
+                          :title="$t('references.items.'+reference.name+'.title')"
                           :text="$t('references.items.'+reference.name+'.text')"
                           :link="reference.link"/>
         </div>
@@ -40,6 +41,21 @@
             name: "third",
             link: "https://github.com/Sybit-Education/airtable.java"
           },]
+      }
+    },
+    methods: {
+      visibilityChanged(isVisible, entry) {
+        if (isVisible) {
+          let elements = document.getElementsByClassName("custom-fade-in");
+          for (let element of elements) {
+            element.classList.add('visible')
+          }
+        } else {
+          let elements = document.getElementsByClassName("custom-fade-in");
+          for (let element of elements) {
+            element.classList.remove('visible')
+          }
+        }
       }
     }
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card custom-fade-in">
     <div class="card-content">
       <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"/>
       <p class="title">

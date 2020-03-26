@@ -101,5 +101,13 @@
     transform: translateY(-50vh);
   }
 
+  .custom-fade-in {
+    opacity: 0;
+    transition: opacity 1.6s ease-out;
+  }
+
+  .custom-fade-in.visible {
+    opacity: 1;
+  }
 
 </style>

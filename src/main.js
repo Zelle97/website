@@ -4,6 +4,7 @@ import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import App from './App.vue'
 import VueScrollTo from 'vue-scrollto'
+import VueObserveVisibility from 'vue-observe-visibility'
 
 Vue.use(VueScrollTo, {
   container: "body",
@@ -21,6 +22,7 @@ Vue.use(VueScrollTo, {
 
 Vue.use(Buefy);
 Vue.use(VueI18n);
+Vue.use(VueObserveVisibility);
 
 import content_EN from './data/content_EN';
 import content_DE from './data/content_DE';
