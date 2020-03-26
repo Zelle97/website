@@ -96,10 +96,14 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  // Anchor customization
+
   .anchor {
     position: absolute;
     transform: translateY(-50vh);
   }
+
+  // Fade in customization
 
   .custom-fade-in {
     opacity: 0;
@@ -110,4 +114,23 @@
     opacity: 1;
   }
 
+
+  // Timeline Customization
+
+  .timeline__item:after {
+    background-color: $primary;
+  }
+
+  .timeline__content {
+    border: 1px solid $primary;
+  }
+
+  .timeline--horizontal .timeline__item--bottom .timeline__content:before {
+    border-bottom: 12px solid $primary;
+    border-top: transparent !important;
+  }
+
+  .timeline--horizontal .timeline__item .timeline__content:before {
+    border-top: 12px solid $primary;
+  }
 </style>
