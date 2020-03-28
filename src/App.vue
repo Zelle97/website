@@ -107,7 +107,7 @@
 
   .custom-fade-in {
     opacity: 0;
-    transition: opacity 1.6s ease-out;
+    transition: opacity 1.2s ease-out;
   }
 
   .custom-fade-in.visible {
@@ -132,5 +132,16 @@
 
   .timeline--horizontal .timeline__item .timeline__content:before {
     border-top: 12px solid $primary;
+  }
+
+  // Progress Bars
+
+  .progress-loop {
+    padding: 10px;
+  }
+
+  .progress {
+    background: $primary;
+    transition: width 1s;
   }
 </style>

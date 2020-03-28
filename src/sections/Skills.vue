@@ -12,7 +12,7 @@
       <b-tabs position="is-centered" class="block">
         <div v-for="skill in skills">
           <b-tab-item :label="$t('skills.items.'+skill.name+'.title')">
-            <div class="progress-wrapper" v-for="item in skill.items">
+            <div class="progress-loop" v-for="item in skill.items">
               <b-progress type="is-info" :value="item.value" size="is-large" show-value>
                 {{$t('skills.items.'+skill.name+'.'+item.index)}}
               </b-progress>
@@ -102,5 +102,20 @@
 </script>
 
 <style>
+
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .progress{
+    transition: 0.2s all linear;
+    animation: progress 3s ease forwards;
+    -webkit-animation: progress 1.5s ease-in-out forwards;
+  }
 
 </style>

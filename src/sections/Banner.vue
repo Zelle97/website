@@ -33,7 +33,7 @@
 <style>
   .bgimg {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background-image: url('../assets/stockphoto.jpeg');
   }
 
