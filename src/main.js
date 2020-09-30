@@ -5,6 +5,8 @@ import 'buefy/dist/buefy.css'
 import App from './App.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueObserveVisibility from 'vue-observe-visibility'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 Vue.use(VueScrollTo, {
   container: "body",
@@ -38,6 +40,9 @@ const i18n = new VueI18n({
 });
 
 new Vue({
+  created () {
+    AOS.init()
+  },
   i18n,
   el: '#app',
   render: h => h(App)
