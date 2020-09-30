@@ -2,6 +2,7 @@
   <div class="main">
     <navbar></navbar>
     <banner></banner>
+    <personal></personal>
     <c-v></c-v>
     <skills></skills>
     <references></references>
@@ -33,10 +34,11 @@
   import Skills from "./sections/Skills";
   import References from "./sections/References";
   import Banner from "./sections/Banner";
+  import Personal from "./sections/Personal";
 
   export default {
     name: 'app',
-    components: {Banner, References, Skills, CV, Contact, Navbar},
+    components: {Personal, Banner, References, Skills, CV, Contact, Navbar},
     data() {
       return {
         currentYear: ''
