@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section section-animated">
     <div class="container">
       <div class="level">
         <div class="level-item">
@@ -19,6 +19,7 @@
         </div>
       </div>
     </div>
+    <hr>
   </div>
 </template>
 
