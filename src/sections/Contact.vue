@@ -1,5 +1,10 @@
 <template>
-  <section class="section">
+  <section
+    class="section"
+    data-aos="flip-up"
+    :data-aos-offset="300"
+    data-aos-delay="100"
+  >
     <div class="container">
       <div class="has-text-centered">
         <span class="anchor" id="contact"></span>

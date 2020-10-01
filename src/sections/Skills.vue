@@ -17,7 +17,7 @@
         >
           <div
             class="progress-loop"
-            v-for="item in skill.items"
+            v-for="(item, index) in skill.items"
             :key="item.index"
           >
             <b-progress
@@ -25,6 +25,9 @@
               :value="item.value"
               size="is-large"
               show-value
+              data-aos="fade-right"
+              :data-aos-offset="100 + 50 * index"
+              data-aos-delay="50"
             >
               {{ $t("skills.items." + skill.name + "." + item.index) }}
             </b-progress>
