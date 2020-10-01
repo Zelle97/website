@@ -109,7 +109,7 @@
 
   .custom-fade-in {
     opacity: 0;
-    transition: opacity 1.2s ease-out;
+    transition: opacity 2.4s ease-out;
   }
 
   .custom-fade-in.visible {
@@ -146,4 +146,23 @@
     background: $primary;
     transition: width 1s;
   }
+
+  // Animations
+
+  .section-animated {
+    margin-top: 10vh;
+    bottom: 0;
+    display: flex;
+    height: 90vh;
+    padding: 1rem;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .section-animated:nth-child(2){
+    margin-top: 0;
+    z-index: 2;
+  }
+
 </style>

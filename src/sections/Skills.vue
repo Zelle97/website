@@ -114,8 +114,8 @@
 
   .progress{
     transition: 0.2s all linear;
-    animation: progress 3s ease forwards;
-    -webkit-animation: progress 1.5s ease-in-out forwards;
+    animation: progress 1s ease forwards;
+    -webkit-animation: progress 1s ease-in-out forwards;
   }
 
 </style>

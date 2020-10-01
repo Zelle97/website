@@ -1,5 +1,5 @@
 <template>
-  <div class="section bgimg">
+  <div class="section section-animated bgimg">
     <div class="card banner-card rounded">
       <header class="card-header is-centered">
         <p class="card-header-title is-centered">
@@ -41,5 +41,6 @@
     margin-left: 10vw;
     margin-top: 15vh;
     max-width: 40vw;
+    max-height: 23vh;
   }
 </style>
