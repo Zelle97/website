@@ -40,7 +40,7 @@ export default {
 .banner-card {
   margin-left: 10vw;
   margin-top: 15vh;
-  max-width: 40vw;
+  max-width: 35vw !important;
   max-height: 23vh;
 }
 </style>

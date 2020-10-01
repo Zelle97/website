@@ -1,12 +1,12 @@
 <template>
-  <section
-    class="section"
-    data-aos="flip-up"
-    :data-aos-offset="300"
-    data-aos-delay="100"
-  >
+  <section class="section">
     <div class="container">
-      <div class="has-text-centered">
+      <div
+        class="has-text-centered"
+        data-aos="flip-up"
+        :data-aos-offset="200"
+        data-aos-delay="100"
+      >
         <span class="anchor" id="contact"></span>
         <h1 class="title">{{ $t("contact.header") }}</h1>
         <h2 class="subtitle">
@@ -15,7 +15,12 @@
       </div>
 
       <form id="contact-form">
-        <b-field :label="$t('contact.name')">
+        <b-field
+          :label="$t('contact.name')"
+          data-aos="flip-up"
+          :data-aos-offset="250"
+          data-aos-delay="100"
+        >
           <b-input
             id="form-name"
             v-model="senderName"
@@ -25,7 +30,12 @@
           ></b-input>
         </b-field>
 
-        <b-field :label="$t('contact.email')">
+        <b-field
+          :label="$t('contact.email')"
+          data-aos="flip-up"
+          :data-aos-offset="275"
+          data-aos-delay="100"
+        >
           <b-input
             id="form-mail"
             v-model="fromMail"
@@ -36,7 +46,12 @@
           </b-input>
         </b-field>
 
-        <b-field :label="$t('contact.message')">
+        <b-field
+          :label="$t('contact.message')"
+          data-aos="flip-up"
+          :data-aos-offset="300"
+          data-aos-delay="100"
+        >
           <b-input
             id="form-message"
             v-model="content"
