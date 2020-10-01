@@ -1,10 +1,13 @@
 <template>
   <div class="section section-animated">
     <div class="container">
-      <div class="level">
+      <div class="level personal">
         <div class="level-item">
           <figure class="image">
-            <img class="is-rounded" src="https://via.placeholder.com/600.png ">
+            <img
+              class="is-rounded"
+              src="https://via.placeholder.com/600.png "
+            />
           </figure>
         </div>
         <div class="container has-text-centered personal-text">
@@ -19,20 +22,21 @@
         </div>
       </div>
     </div>
-    <hr>
+    <hr />
   </div>
 </template>
 
-
 <script>
-  export default {
-    name: "Personal"
-  }
+export default {
+  name: "Personal"
+};
 </script>
 
 <style scoped>
-
-  .personal-text {
-    max-width: 40vw;
-  }
+.personal {
+  padding-top: 15vh;
+}
+.personal-text {
+  max-width: 40vw;
+}
 </style>

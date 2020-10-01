@@ -13,10 +13,10 @@
       </div>
       <footer class="card-footer">
         <div class="card-footer-item">
-          <b-button type="is-info"
-                    outlined
-                    rounded>
-            <a href="#" v-scroll-to="'#contact'" class="has-text-black">{{ $t("banner.button")}}</a>
+          <b-button type="is-info" outlined rounded>
+            <a href="#" v-scroll-to="'#contact'" class="has-text-black">{{
+              $t("banner.button")
+            }}</a>
           </b-button>
         </div>
       </footer>
@@ -25,22 +25,22 @@
 </template>
 
 <script>
-  export default {
-    name: "Banner"
-  }
+export default {
+  name: "Banner"
+};
 </script>
 
 <style>
-  .bgimg {
-    width: 100vw;
-    height: 110vh;
-    background-image: url('../assets/stockphoto.jpeg');
-  }
+.bgimg {
+  width: 100vw;
+  height: 110vh;
+  background-image: url("../assets/stockphoto.jpeg");
+}
 
-  .banner-card {
-    margin-left: 10vw;
-    margin-top: 15vh;
-    max-width: 40vw;
-    max-height: 23vh;
-  }
+.banner-card {
+  margin-left: 10vw;
+  margin-top: 15vh;
+  max-width: 40vw;
+  max-height: 23vh;
+}
 </style>

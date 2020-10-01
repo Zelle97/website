@@ -9,58 +9,64 @@
         {{ $t("references.text") }}
       </h2>
       <div class="level">
-        <div class="level-item" v-for="reference in references">
-          <reference-card v-observe-visibility="visibilityChanged"
-                          :title="$t('references.items.'+reference.name+'.title')"
-                          :text="$t('references.items.'+reference.name+'.text')"
-                          :link="reference.link"/>
+        <div
+          class="level-item"
+          v-for="reference in references"
+          :key="reference.name"
+        >
+          <reference-card
+            v-observe-visibility="visibilityChanged"
+            :title="$t('references.items.' + reference.name + '.title')"
+            :text="$t('references.items.' + reference.name + '.text')"
+            :link="reference.link"
+          />
         </div>
       </div>
     </div>
-    <hr>
+    <hr />
   </section>
 </template>
 
 <script>
-  import ReferenceCard from "../components/ReferenceCard";
+import ReferenceCard from "../components/ReferenceCard";
 
-  export default {
-    name: "References",
-    components: {ReferenceCard},
-    data() {
-      return {
-        references: [
-          {
-            name: "genAlg",
-            link: "https://github.com/Zelle97/GeneticAlgorithm"
-          },
-          {
-            name: "second",
-            link: "https://github.com/Zelle97"
-          }, {
-            name: "third",
-            link: "https://github.com/Sybit-Education/airtable.java"
-          },]
-      }
-    },
-    methods: {
-      visibilityChanged(isVisible, entry) {
-        if (isVisible) {
-          let elements = document.getElementsByClassName("custom-fade-in");
-          for (let element of elements) {
-            element.classList.add('visible')
-          }
-        } else {
-          let elements = document.getElementsByClassName("custom-fade-in");
-          for (let element of elements) {
-            element.classList.remove('visible')
-          }
+export default {
+  name: "References",
+  components: { ReferenceCard },
+  data() {
+    return {
+      references: [
+        {
+          name: "genAlg",
+          link: "https://github.com/Zelle97/GeneticAlgorithm"
+        },
+        {
+          name: "second",
+          link: "https://github.com/Zelle97"
+        },
+        {
+          name: "third",
+          link: "https://github.com/Sybit-Education/airtable.java"
+        }
+      ]
+    };
+  },
+  methods: {
+    visibilityChanged(isVisible) {
+      if (isVisible) {
+        let elements = document.getElementsByClassName("custom-fade-in");
+        for (let element of elements) {
+          element.classList.add("visible");
+        }
+      } else {
+        let elements = document.getElementsByClassName("custom-fade-in");
+        for (let element of elements) {
+          element.classList.remove("visible");
         }
       }
     }
   }
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
