@@ -1,6 +1,7 @@
 <template>
   <div class="section section-animated">
     <div class="container">
+      <span class="anchor" id="personal"></span>
       <div class="level personal">
         <div class="level-item">
           <figure class="image">
