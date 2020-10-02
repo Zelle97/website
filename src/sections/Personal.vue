@@ -40,4 +40,23 @@ export default {
 .personal-text {
   max-width: 40vw;
 }
+
+@media only screen and (max-width: 800px) {
+  .section-animated {
+    margin-bottom: 15vh;
+  }
+  .personal-text {
+    max-width: 60vw;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section-animated {
+    margin-bottom: 50vh;
+  }
+  .personal-text {
+    max-width: 90vw;
+  }
+}
 </style>

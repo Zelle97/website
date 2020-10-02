@@ -43,4 +43,22 @@ export default {
   max-width: 35vw !important;
   max-height: 23vh;
 }
+
+@media screen and (max-width: 800px) {
+  .banner-card {
+    margin-left: 10vw;
+    margin-top: 15vh;
+    max-width: 50vw !important;
+    max-height: 25vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner-card {
+    margin-top: 15vh;
+    margin-left: 6vw;
+    max-width: 80vw !important;
+    max-height: 42vh;
+  }
+}
 </style>
