@@ -63,4 +63,10 @@ export default {
 
 <style>
 @import "../../node_modules/timeline/dist/css/timeline.min.css";
+
+@media screen and (max-width: 800px) {
+  .section {
+    margin-top: 10vh;
+  }
+}
 </style>

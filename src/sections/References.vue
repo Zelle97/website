@@ -11,11 +11,13 @@
       <div class="level">
         <div
           class="level-item"
-          v-for="reference in references"
+          v-for="(reference, index) in references"
           :key="reference.name"
         >
           <reference-card
-            v-observe-visibility="visibilityChanged"
+            data-aos="zoom-in"
+            :data-aos-offset="175 + 75 * index"
+            data-aos-delay="50"
             :title="$t('references.items.' + reference.name + '.title')"
             :text="$t('references.items.' + reference.name + '.text')"
             :link="reference.link"
@@ -51,21 +53,7 @@ export default {
       ]
     };
   },
-  methods: {
-    visibilityChanged(isVisible) {
-      if (isVisible) {
-        let elements = document.getElementsByClassName("custom-fade-in");
-        for (let element of elements) {
-          element.classList.add("visible");
-        }
-      } else {
-        let elements = document.getElementsByClassName("custom-fade-in");
-        for (let element of elements) {
-          element.classList.remove("visible");
-        }
-      }
-    }
-  }
+  methods: {}
 };
 </script>
 

@@ -132,17 +132,6 @@ $link-focus-border: $primary;
   transform: translateY(-50vh);
 }
 
-// Fade in customization
-
-.custom-fade-in {
-  opacity: 0;
-  transition: opacity 2.4s ease-out;
-}
-
-.custom-fade-in.visible {
-  opacity: 1;
-}
-
 // Timeline Customization
 
 .timeline__item:after {

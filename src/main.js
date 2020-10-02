@@ -12,7 +12,7 @@ Vue.use(VueScrollTo, {
   container: "body",
   duration: 700,
   easing: "ease",
-  offset: -200,
+  offset: -100,
   force: true,
   cancelable: true,
   onStart: false,

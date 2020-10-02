@@ -15,6 +15,9 @@
 
       <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
+          <a class="navbar-item" href="#" v-scroll-to="'#personal'">
+            {{ $t("personal.header") }}
+          </a>
           <a class="navbar-item" href="#" v-scroll-to="'#cv'">
             {{ $t("navbar.cv") }}
           </a>

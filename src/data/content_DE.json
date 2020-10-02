@@ -69,8 +69,8 @@
     }
   },
   "personal":  {
-    "header": "Personal",
-    "text": "Some personal information about me....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "header": "Person",
+    "text": "Hallo! Ich bin ein Student an der Hochschule für Technik, Wirtschaft und Gestaltung in Konstanz im Fachbereich Angewandte Informatik. Bevor ich mein Studium anfing habe ich eine Ausbildung zum Fachinformatiker im Bereich der Anwendungsentwicklung abgeschlossen. Ich bin Technologie begeistert und immer auf der Suche meine Fähigkeiten weiter zu verbessern oder neue zu erlernen. In der Vergangenheit habe ich immer wieder neue Technologien erlernt und konnte so meinen Horizont erweitern. Mein Ziel ist es ein Full Stack Developer zu werden der sich überall zurechtfindet und effektiv Probleme lösen kann! "
   },
   "references": {
     "header": "Referenzen",
