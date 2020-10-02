@@ -41,7 +41,7 @@ export default {
   margin-left: 10vw;
   margin-top: 15vh;
   max-width: 35vw !important;
-  max-height: 23vh;
+  max-height: 21vh;
 }
 
 @media screen and (max-width: 800px) {
