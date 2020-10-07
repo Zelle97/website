@@ -1,5 +1,5 @@
 <template>
-  <div class="section section-animated">
+  <div class="section section-animated delayVisible">
     <div class="container">
       <span class="anchor" id="personal"></span>
       <div class="level personal">
@@ -39,6 +39,17 @@ export default {
 }
 .personal-text {
   max-width: 40vw;
+}
+
+.delayVisible {
+  animation: delayVisible 0s 3s forwards;
+  visibility: hidden;
+}
+
+@keyframes delayVisible {
+  to {
+    visibility: visible;
+  }
 }
 
 @media only screen and (max-width: 800px) {

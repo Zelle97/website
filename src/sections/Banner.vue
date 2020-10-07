@@ -1,27 +1,5 @@
 <template>
-  <div class="section section-animated bgimg">
-    <div class="card banner-card rounded">
-      <header class="card-header is-centered">
-        <p class="card-header-title is-centered">
-          Fabian Zeller
-        </p>
-      </header>
-      <div class="card-content">
-        <h2 class="content has-text-centered">
-          {{ $t("banner.text") }}
-        </h2>
-      </div>
-      <footer class="card-footer">
-        <div class="card-footer-item">
-          <b-button type="is-info" outlined rounded>
-            <a href="#" v-scroll-to="'#contact'" class="has-text-black">{{
-              $t("banner.button")
-            }}</a>
-          </b-button>
-        </div>
-      </footer>
-    </div>
-  </div>
+  <div class="section section-animated bgimg"></div>
 </template>
 
 <script>
@@ -35,30 +13,50 @@ export default {
   width: 100vw;
   height: 110vh;
   background-image: url("../assets/stockphoto.jpeg");
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
-.banner-card {
-  margin-left: 10vw;
-  margin-top: 15vh;
-  max-width: 35vw !important;
-  max-height: 21vh;
-}
-
-@media screen and (max-width: 800px) {
-  .banner-card {
-    margin-left: 10vw;
-    margin-top: 15vh;
-    max-width: 50vw !important;
-    max-height: 25vh;
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .banner-card {
-    margin-top: 15vh;
-    margin-left: 6vw;
-    max-width: 80vw !important;
-    max-height: 42vh;
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 </style>
