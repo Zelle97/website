@@ -4,11 +4,8 @@
       <span class="anchor" id="personal"></span>
       <div class="level personal">
         <div class="level-item">
-          <figure class="image">
-            <img
-              class="is-rounded"
-              src="https://via.placeholder.com/600.png "
-            />
+          <figure class="image personal-image">
+            <img class="is-rounded" src="../assets/personal_edited.png" />
           </figure>
         </div>
         <div class="container has-text-centered personal-text">
@@ -37,6 +34,11 @@ export default {
 .personal {
   padding-top: 15vh;
 }
+
+.personal-image {
+  max-width: 30vw;
+}
+
 .personal-text {
   max-width: 40vw;
 }
