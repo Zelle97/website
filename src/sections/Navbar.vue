@@ -1,8 +1,8 @@
 <template>
   <fixed-header
     data-aos="fade-down"
-    data-aos-delay="200"
-    data-aos-duration="1800"
+    data-aos-delay="2400"
+    data-aos-duration="2000"
   >
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
