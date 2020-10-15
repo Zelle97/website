@@ -1,45 +1,169 @@
 <template>
-  <div class="section bgimg">
-    <div class="card banner-card rounded">
-      <header class="card-header is-centered">
-        <p class="card-header-title is-centered">
-          Fabian Zeller
-        </p>
-      </header>
-      <div class="card-content">
-        <h2 class="content has-text-centered">
-          {{ $t("banner.text") }}
-        </h2>
-      </div>
-      <footer class="card-footer">
-        <div class="card-footer-item">
-          <b-button type="is-info"
-                    outlined
-                    rounded>
-            <a href="#contact" class="has-text-black">{{ $t("banner.button")}}</a>
-          </b-button>
-        </div>
-      </footer>
+  <div class="section section-animated bgimg">
+    <div class="typewriter">
+      <h1 id="message" class="title"></h1>
+      <h1 id="message2" class="title second-line"></h1>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: "Banner"
+export default {
+  name: "Banner",
+  methods: {
+    typeMessage(str, elem) {
+      return new Promise(resolve => {
+        const mHTML = elem;
+        const currentStr = str;
+        currentStr.split();
+        let part = "";
+        let currentLetter = 0;
+        let int1 = setInterval(() => {
+          if (!currentStr[currentLetter]) {
+            clearInterval(int1);
+            resolve();
+          } else {
+            part += currentStr[currentLetter++];
+            mHTML.innerHTML = part;
+          }
+        }, 70);
+      });
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      let pr = this.typeMessage(
+        "Software development",
+        document.getElementById("message")
+      );
+      pr.then(() => {
+        this.typeMessage("with heart.", document.getElementById("message2"));
+      });
+    }, 100 * 7);
   }
+};
 </script>
 
 <style>
-  .bgimg {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../assets/stockphoto.jpeg');
+.typewriter h1 {
+  font-size: 48px;
+  color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 25vh auto 2vh 6vw; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+}
+
+.second-line {
+  margin-top: 2vh !important;
+}
+
+.bgimg {
+  width: 100vw;
+  height: 110vh;
+  background-image: url("../assets/banner_hotizontal_edited.jpeg");
+  background-size: cover;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .typewriter h1 {
+    font-size: 34px;
+    color: white;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 25vh auto 2vh 6vw; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
   }
 
-  .banner-card {
-    margin-left: 10vw;
-    margin-top: 15vh;
-    max-width: 40vw;
+  .second-line {
+    margin-top: 2vh !important;
   }
+
+  .bgimg {
+    width: 100vw;
+    height: 110vh;
+    background-image: url("../assets/banner_hotizontal_edited.jpeg");
+    background-size: cover;
+
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .typewriter h1 {
+    font-size: 24px;
+    color: white;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 25vh auto 2vh 6vw; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+  }
+
+  .second-line {
+    margin-top: 2vh !important;
+  }
+
+  .bgimg {
+    width: 100vw;
+    height: 110vh;
+    background-image: url("../assets/banner_hotizontal_edited.jpeg");
+    background-size: cover;
+
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;
+  }
+}
 </style>

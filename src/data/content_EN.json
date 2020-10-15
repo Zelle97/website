@@ -59,7 +59,7 @@
         "3": "French (basic)"
       },
       "prog": {
-        "title": "Programming Lanugages",
+        "title": "Programming Languages",
         "1": "Java",
         "2": "Java Script",
         "3": "Shell/Bash/Batch",
@@ -67,6 +67,10 @@
         "5": "Rust"
       }
     }
+  },
+  "personal":  {
+    "header": "Personal",
+    "text": "Hello there! I am a Information Technology student at the University of applied Science in Konstanz. Before I started studying I finished a apprenticeship as a IT Specialist for Software and Application Development. Technology is a big part of my life and I am constantly searching for new ways to improve my skills or aquire new ones. In the past I really enjoyed mastering cutting edge technology and broadening my horizon. My Goal is to be a Full Stack Developer capable of working anywhere and solve problems effectively!"
   },
   "references": {
     "header": "References",
@@ -82,7 +86,7 @@
       },
       "third": {
         "title": "Airtable.java",
-        "text": "A Airtable Java API developed while my Apprenticeship."
+        "text": "Airtable Java API."
       }
     }
   },

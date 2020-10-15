@@ -28,8 +28,8 @@
         "text": "Hohentwiel Gewerbeschule Singen (Technisches Gymnasium)"
       },
       "third": {
-        "title": "2016 - Begin Ausbildung zum Fachinformatiker",
-        "text": "Ausbildung als Fachinformatiker für Anwendungsenticklung bei Sybit GmbH Radolfzell"
+        "title": "2016 - Beginn Ausbildung zum Fachinformatiker",
+        "text": "Ausbildung als Fachinformatiker für Anwendungsentwicklung bei Sybit GmbH Radolfzell"
       },
       "fourth": {
         "title": "2019",
@@ -43,10 +43,10 @@
   },
   "skills": {
     "header": "Fähigkeiten",
-    "text": "Eine Zusammenfasssung meiner Fahigkeiten und meines Wissensstandes",
+    "text": "Eine Zusammenfasssung meiner Fähigkeiten und meines Wissensstandes",
     "items": {
       "tech": {
-        "title": "Technologien and Frameworks",
+        "title": "Technologien und Frameworks",
         "1": "Ant/Maven/Gradle",
         "2": "Spring/Spring Boot",
         "3": "SAP Hybris",
@@ -68,13 +68,17 @@
       }
     }
   },
+  "personal":  {
+    "header": "Person",
+    "text": "Hallo! Ich bin ein Student an der Hochschule für Technik, Wirtschaft und Gestaltung in Konstanz im Fachbereich Angewandte Informatik. Bevor ich mein Studium anfing habe ich eine Ausbildung zum Fachinformatiker im Bereich der Anwendungsentwicklung abgeschlossen. Ich bin Technologie begeistert und immer auf der Suche meine Fähigkeiten weiter zu verbessern oder neue zu erlernen. In der Vergangenheit habe ich immer wieder neue Technologien erlernt und konnte so meinen Horizont erweitern. Mein Ziel ist es ein Full Stack Developer zu werden der sich überall zurechtfindet und effektiv Probleme lösen kann! "
+  },
   "references": {
     "header": "Referenzen",
     "text": "Zusammenfassung meiner Projekte und Referenzen",
     "items": {
       "genAlg": {
         "title": "Genetischer Algorithmus",
-        "text": "Test Projekt eines genetischen Algorithmuses"
+        "text": "Test Projekt eines genetischen Algorithmus"
       },
       "second": {
         "title": "Diese Webseite",
@@ -82,13 +86,13 @@
       },
       "third": {
         "title": "Airtable.java",
-        "text": "Eine Java API für Airtable die während meiner Ausbildung entstanden ist"
+        "text": "Java API für Airtable"
       }
     }
   },
   "contact": {
     "header": "Kontakt",
-    "text": "Wenn sie mit mir Verbindung aufnehmen wollen füllen sie folgendes Formular aus.",
+    "text": "Wenn sie mit mir in Verbindung treten wollen füllen sie bitte folgendes Formular aus.",
     "name": "Name",
     "ph_name": "Ihr Name",
     "email": "Email",

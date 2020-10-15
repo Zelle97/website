@@ -1,9 +1,14 @@
 <template>
-  <fixed-header>
+  <fixed-header
+    data-aos="fade-down"
+    data-aos-delay="2400"
+    data-aos-duration="2000"
+  >
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <img src="../assets/Logo.png">
+        <span class="top" id="top"></span>
+        <a class="navbar-item" href="#" v-scroll-to="'#top'">
+          <img src="../assets/Logo.png" />
         </a>
         <span class="navbar-burger burger" data-target="navMenu">
           <span></span>
@@ -14,19 +19,22 @@
 
       <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item" href="#cv">
+          <a class="navbar-item" href="#" v-scroll-to="'#personal'">
+            {{ $t("personal.header") }}
+          </a>
+          <a class="navbar-item" href="#" v-scroll-to="'#cv'">
             {{ $t("navbar.cv") }}
           </a>
 
-          <a class="navbar-item" href="#skills">
+          <a class="navbar-item" href="#" v-scroll-to="'#skills'">
             {{ $t("skills.header") }}
           </a>
 
-          <a class="navbar-item" href="#references">
+          <a class="navbar-item" href="#" v-scroll-to="'#references'">
             {{ $t("references.header") }}
           </a>
 
-          <a class="navbar-item" href="#contact">
+          <a class="navbar-item" href="#" v-scroll-to="'#contact'">
             {{ $t("contact.header") }}
           </a>
 
@@ -40,31 +48,31 @@
 </template>
 
 <script>
-  import FixedHeader from 'vue-fixed-header'
-  import LanguageDropdown from "../components/LanguageDropdown";
+import FixedHeader from "vue-fixed-header";
+import LanguageDropdown from "../components/LanguageDropdown";
 
-  export default {
-    name: "navbar",
-    components: {LanguageDropdown, FixedHeader},
-    methods: {
-      mobileNavbar: function () {
-        var burger = document.querySelector('.burger');
-        var nav = document.querySelector('#' + burger.dataset.target);
+export default {
+  name: "navbar",
+  components: { LanguageDropdown, FixedHeader },
+  methods: {
+    mobileNavbar: function() {
+      var burger = document.querySelector(".burger");
+      var nav = document.querySelector("#" + burger.dataset.target);
 
-        burger.addEventListener('click', function () {
-          burger.classList.toggle('is-active');
-          nav.classList.toggle('is-active');
-        });
-      }
-    },
-    mounted() {
-      this.mobileNavbar();
+      burger.addEventListener("click", function() {
+        burger.classList.toggle("is-active");
+        nav.classList.toggle("is-active");
+      });
     }
+  },
+  mounted() {
+    this.mobileNavbar();
   }
+};
 </script>
 
 <style>
-  .navbar-item {
-    margin-right: 15px;
-  }
+.navbar-item {
+  margin-right: 15px;
+}
 </style>
