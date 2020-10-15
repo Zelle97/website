@@ -1,5 +1,9 @@
 <template>
-  <fixed-header>
+  <fixed-header
+    data-aos="fade-down"
+    data-aos-delay="2400"
+    data-aos-duration="2000"
+  >
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <span class="top" id="top"></span>
