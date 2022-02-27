@@ -33,7 +33,9 @@
           <a class="navbar-item" href="#" v-scroll-to="'#contact'">
             {{ $t("contact.header") }}
           </a>
-
+          <a class="navbar-item">
+            <b-button v-on:click="toogleDarkTheme()"><b-icon icon="theme-light-dark"></b-icon></b-button>
+          </a>
           <a class="navbar-item">
             <LanguageDropdown></LanguageDropdown>
           </a>
@@ -59,6 +61,10 @@ export default {
         burger.classList.toggle("is-active");
         nav.classList.toggle("is-active");
       });
+    },
+    toogleDarkTheme: function() {
+      document.documentElement.classList.toggle('light');
+      document.documentElement.classList.toggle('dark');
     }
   },
   mounted() {

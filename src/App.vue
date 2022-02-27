@@ -59,9 +59,71 @@ export default {
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
-// Set your colors
+// Custom colors
+$--custom-theme-background: --custom-theme-background;
+$--custom-theme-text: --custom-theme-text;
+$--custom-theme-text-light: --custom-theme-text-light;
+$--custom-theme-text-strong: --custom-theme-text-strong;
+
+// Default theme
+$theme-map-light: (
+  $--custom-theme-background: #ffffff,
+  $--custom-theme-text: #4a4a4a,
+  $--custom-theme-text-light: #7a7a7a,
+  $--custom-theme-text-strong: #363636,
+);
+
+// Override the default light theme
+$theme-map-dark: (
+  $--custom-theme-background: #353535,
+  $--custom-theme-text: #aeaeae,
+  $--custom-theme-text-light: #979797,
+  $--custom-theme-text-strong: #ffffff,
+);
+
+@mixin spread-map($map: ()) {
+  @each $key, $value in $map {
+    #{$key}: $value;
+  }
+}
+
+:root.light {
+  @include spread-map($theme-map-light);
+}
+:root.dark {
+  @include spread-map($theme-map-dark);
+}
+
+// Override Variables
 $primary: #990000;
-//$primary-invert: findColorInvert($primary);
+$scheme-main: var($--custom-theme-background);
+$text: var($--custom-theme-text);
+$text-light: var($--custom-theme-text-light);
+$text-strong: var($--custom-theme-text-strong);
+
+// Links
+$link: $primary;
+$link-hover: $text-strong;
+$link-focus: $text-strong;
+$link-active: $text-strong;
+$link-focus-border: $primary;
+
+// Navbar
+$navbar-item-hover-color: $text-strong;
+$navbar-item-hover-background-color: $scheme-main;
+$navbar-dropdown-item-hover-color: $text-strong;
+$navbar-dropdown-item-hover-background-color: $scheme-main;
+
+// Dropdown
+$dropdown-background-color: $scheme-main;
+$dropdown-item-hover-color: $text-strong;
+$dropdown-item-hover-background-color: $scheme-main;
+
+// Inputs
+$input-background-color: inherit;
+
+// Cards
+$card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3), 0 0px 0 1px rgba(10, 10, 10, 0.06);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
@@ -103,10 +165,6 @@ $colors: (
   )
 );
 
-// Links
-$link: $primary;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
 
 // Import Bulma and Buefy styles
 @import "~bulma";
@@ -140,6 +198,8 @@ $link-focus-border: $primary;
 
 .timeline__content {
   border: 1px solid $primary;
+  background-color: inherit;
+  color: inherit;
 }
 
 .timeline--horizontal .timeline__item--bottom .timeline__content:before {
@@ -178,5 +238,10 @@ $link-focus-border: $primary;
 .section-animated:nth-child(2) {
   margin-top: 0;
   z-index: 2;
+}
+
+.footer {
+  background-color: inherit;
+  color: inherit;
 }
 </style>
