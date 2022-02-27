@@ -14,7 +14,7 @@
       </div>
 
       <div id="navMenu" class="navbar-menu">
-        <div class="navbar-end">
+        <div class="navbar-start">
           <a class="navbar-item" href="#" v-scroll-to="'#personal'">
             {{ $t("personal.header") }}
           </a>
@@ -33,6 +33,8 @@
           <a class="navbar-item" href="#" v-scroll-to="'#contact'">
             {{ $t("contact.header") }}
           </a>
+        </div>
+        <div class="navbar-end">
           <a class="navbar-item">
             <b-button v-on:click="toogleDarkTheme()"><b-icon icon="theme-light-dark"></b-icon></b-button>
           </a>

@@ -1,5 +1,10 @@
 <template>
-  <section class="section">
+  <section
+    class="section"
+    data-aos="fade-right"
+    :data-aos-offset="170"
+    data-aos-delay="50"
+  >
     <div class="container has-text-centered">
       <span class="anchor" id="skills"></span>
       <h1 class="title">
@@ -17,7 +22,7 @@
         >
           <div
             class="progress-loop"
-            v-for="(item, index) in skill.items"
+            v-for="item in skill.items"
             :key="item.index"
           >
             <b-progress
@@ -25,9 +30,6 @@
               :value="item.value"
               size="is-large"
               show-value
-              data-aos="fade-right"
-              :data-aos-offset="100 + 50 * index"
-              data-aos-delay="50"
             >
               {{ $t("skills.items." + skill.name + "." + item.index) }}
             </b-progress>
