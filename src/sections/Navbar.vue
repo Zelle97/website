@@ -1,9 +1,5 @@
 <template>
-  <fixed-header
-    data-aos="fade-down"
-    data-aos-delay="2400"
-    data-aos-duration="2000"
-  >
+  <fixed-header class="animated">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <span class="top" id="top"></span>
@@ -75,4 +71,25 @@ export default {
 .navbar-item {
   margin-right: 15px;
 }
+.animated {
+  opacity: 0;
+  animation-duration: 2s; /* the duration of the animation */
+  animation-timing-function: ease-out; /* how the animation will behave */
+  animation-delay: 2400ms; /* how long to delay the animation from starting */
+  animation-iteration-count: 1; /* how many times the animation will play */
+  animation-name: slideDown; /* the name of the animation we defined above */
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 </style>
