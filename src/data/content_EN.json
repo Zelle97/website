@@ -9,7 +9,8 @@
   "footer": {
     "text": "This Website was developed by",
     "with": "with",
-    "and": "and"
+    "and": "and",
+    "disclaimer": "This Website is undergoing constant development. If you have any issues or bugs please report them here:"
   },
   "banner": {
     "text": "IT-Specialist for Application Development.\nCurrently studying Applied Computer Science at the University for applied Science in Konstanz.",

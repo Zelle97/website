@@ -9,7 +9,8 @@
   "footer": {
     "text": "Diese Webseite wurde enwickelt von",
     "with": "mit",
-    "and": "und"
+    "and": "und",
+    "disclaimer": "Diese Seite ist konstant in der entwicklung. Falls sie Probleme haben oder Fehler auftreten verfassen sie bitte ein Issue hier:"
   },
   "banner": {
     "text": "Fachinformatiker für Anwendungsentwicklung.\nStudiert momentan an der HTWG Konstanz Angewandte Informatik.",

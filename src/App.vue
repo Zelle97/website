@@ -15,6 +15,10 @@
           {{ $t("footer.with") }} <a href="https://vuejs.org/">Vue.js</a>
           {{ $t("footer.and") }} <a href="https://buefy.org/">Buefy</a>.
         </p>
+        <p class="text">
+          {{ $t("footer.disclaimer") }}
+          <a href="https://github.com/Zelle97/website/issues">Github</a>
+        </p>
         <div>
           <p class="text">&#169; {{ currentYear }} Fabian Zeller</p>
           <!--          <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"/>-->
@@ -238,6 +242,14 @@ $colors: (
 .section-animated:nth-child(2) {
   margin-top: 0;
   z-index: 2;
+}
+
+.contact-recaptcha-text {
+  margin-top: 20px;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
 }
 
 .footer {
