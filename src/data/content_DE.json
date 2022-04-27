@@ -10,7 +10,7 @@
     "text": "Diese Webseite wurde enwickelt von",
     "with": "mit",
     "and": "und",
-    "disclaimer": "Diese Seite ist konstant in der entwicklung. Falls sie Probleme haben oder Fehler auftreten verfassen sie bitte ein Issue hier:"
+    "disclaimer": "Diese Seite ist konstant in der Entwicklung. Falls sie Probleme haben oder Fehler auftreten, verfassen sie bitte ein Issue hier:"
   },
   "banner": {
     "text": "Fachinformatiker für Anwendungsentwicklung.\nStudiert momentan an der HTWG Konstanz Angewandte Informatik.",
@@ -56,7 +56,7 @@
       "lang": {
         "title": "Sprachen",
         "1": "Deutsch (muttersprache)",
-        "2": "English (fliesend)",
+        "2": "English (fließend)",
         "3": "French (Grundlagen)"
       },
       "prog": {
@@ -71,7 +71,7 @@
   },
   "personal":  {
     "header": "Person",
-    "text": "Hallo! Ich bin ein Student an der Hochschule für Technik, Wirtschaft und Gestaltung in Konstanz im Fachbereich Angewandte Informatik. Bevor ich mein Studium anfing habe ich eine Ausbildung zum Fachinformatiker im Bereich der Anwendungsentwicklung abgeschlossen. Ich bin Technologie begeistert und immer auf der Suche meine Fähigkeiten weiter zu verbessern oder neue zu erlernen. In der Vergangenheit habe ich immer wieder neue Technologien erlernt und konnte so meinen Horizont erweitern. Mein Ziel ist es ein Full Stack Developer zu werden der sich überall zurechtfindet und effektiv Probleme lösen kann! "
+    "text": "Hallo! Ich bin ein Student an der Hochschule für Technik, Wirtschaft und Gestaltung in Konstanz im Fachbereich Angewandte Informatik. Bevor ich mein Studium anfing habe ich eine Ausbildung zum Fachinformatiker im Bereich der Anwendungsentwicklung abgeschlossen. Ich bin Technologie begeistert und immer auf der Suche meine Fähigkeiten weiter zu verbessern oder neue zu erlernen. Ich lerne immer wieder neue Technologien kennen und erfreue mich daran meinen Horizont zu erweitern. Mein Ziel ist es ein Full Stack Developer zu werden der sich überall zurechtfindet und effektiv Probleme lösen kann! "
   },
   "references": {
     "header": "Referenzen",
