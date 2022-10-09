@@ -13,14 +13,11 @@
           <div class="timeline__items">
             <div
               class="timeline__item"
-              v-for="(content, index) in Content"
+              v-for="(content) in Content"
               :key="content.title"
             >
               <div
                 class="timeline__content"
-                data-aos="flip-left"
-                :data-aos-offset="225 + 75 * index"
-                data-aos-delay="50"
               >
                 <h1 class="has-text-weight-bold">
                   {{ i18nStringBuilder(content, "title") }}

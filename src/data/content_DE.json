@@ -70,8 +70,20 @@
     }
   },
   "personal":  {
-    "header": "Person",
+    "header": "Über mich",
     "text": "Hallo! Ich bin ein Student an der Hochschule für Technik, Wirtschaft und Gestaltung in Konstanz im Fachbereich Angewandte Informatik. Bevor ich mein Studium anfing habe ich eine Ausbildung zum Fachinformatiker im Bereich der Anwendungsentwicklung abgeschlossen. Ich bin Technologie begeistert und immer auf der Suche meine Fähigkeiten weiter zu verbessern oder neue zu erlernen. Ich lerne immer wieder neue Technologien kennen und erfreue mich daran meinen Horizont zu erweitern. Mein Ziel ist es ein Full Stack Developer zu werden der sich überall zurechtfindet und effektiv Probleme lösen kann! "
+  },
+  "business":  {
+    "header": "Über mein Unternehmen",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedt enim ad minim veniam, qsunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "left": {
+      "header": "Digitalisierung",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "right": {
+      "header": "Meine Dienstelistungen",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
   },
   "references": {
     "header": "Referenzen",

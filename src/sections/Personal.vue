@@ -1,11 +1,11 @@
 <template>
-  <div class="section section-animated delayVisible">
+  <div class="section">
     <div class="container">
       <span class="anchor" id="personal"></span>
       <div class="level personal">
         <div class="level-item">
           <figure class="image personal-image">
-            <img class="is-rounded" src="../assets/personal_edited.png" />
+            <img class="is-rounded" src="../assets/personal.jpeg" />
           </figure>
         </div>
         <div class="container has-text-centered personal-text">
@@ -32,7 +32,6 @@ export default {
 
 <style scoped>
 .personal {
-  padding-top: 15vh;
 }
 
 .personal-image {

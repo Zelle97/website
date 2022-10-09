@@ -15,21 +15,21 @@
 
       <div id="navMenu" class="navbar-menu">
         <div class="navbar-start">
+          <a class="navbar-item" href="#" v-scroll-to="'#business'">
+            {{ $t("business.header") }}
+          </a>
           <a class="navbar-item" href="#" v-scroll-to="'#personal'">
             {{ $t("personal.header") }}
           </a>
           <a class="navbar-item" href="#" v-scroll-to="'#cv'">
             {{ $t("navbar.cv") }}
           </a>
-
           <a class="navbar-item" href="#" v-scroll-to="'#skills'">
             {{ $t("skills.header") }}
           </a>
-
           <a class="navbar-item" href="#" v-scroll-to="'#references'">
             {{ $t("references.header") }}
           </a>
-
           <a class="navbar-item" href="#" v-scroll-to="'#contact'">
             {{ $t("contact.header") }}
           </a>

@@ -1,11 +1,7 @@
 <template>
   <div class="main">
     <navbar></navbar>
-    <banner></banner>
-    <personal></personal>
-    <c-v></c-v>
-    <skills></skills>
-    <references></references>
+    <business-page></business-page>
     <contact></contact>
     <footer class="footer">
       <div class="content has-text-centered">
@@ -33,16 +29,11 @@
 
 <script>
 import Navbar from "./sections/Navbar";
-import Contact from "./sections/Contact";
-import CV from "./sections/CV";
-import Skills from "./sections/Skills";
-import References from "./sections/References";
-import Banner from "./sections/Banner";
-import Personal from "./sections/Personal";
+import BusinessPage from "./BusinessPage.vue";
 
 export default {
   name: "app",
-  components: { Personal, Banner, References, Skills, CV, Contact, Navbar },
+  components: { Navbar, BusinessPage },
   data() {
     return {
       currentYear: ""
@@ -229,10 +220,10 @@ $colors: (
 // Animations
 
 .section-animated {
-  margin-top: 10vh;
+  margin-top: -10vh;
   bottom: 0;
   display: flex;
-  height: 100vh;
+  height: 110vh;
   padding: 1rem;
   position: sticky;
   width: 100%;

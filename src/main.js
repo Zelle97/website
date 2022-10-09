@@ -2,7 +2,6 @@ import Vue from "vue";
 import VueI18n from "vue-i18n";
 import Buefy from "buefy";
 import "buefy/dist/buefy.css";
-import App from "./App.vue";
 import VueScrollTo from "vue-scrollto";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -37,11 +36,25 @@ const i18n = new VueI18n({
   messages
 });
 
+import VueRouter from 'vue-router'
+import BusinessPage from "./BusinessPage.vue";
+import PersonalPage from "./PersonalPage.vue";
+
+const routes = [
+  { path: '/business', component: BusinessPage },
+  { path: '/personal', component: PersonalPage }
+]
+
+const router = new VueRouter({
+  routes // short for `routes: routes`
+})
+
+Vue.use(VueRouter)
+
 new Vue({
   created() {
     AOS.init();
   },
   i18n,
-  el: "#app",
-  render: h => h(App)
-});
+  router,
+}).$mount('#app');
