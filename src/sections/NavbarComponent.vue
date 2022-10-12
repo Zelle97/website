@@ -39,7 +39,7 @@
             <b-button v-on:click="toogleDarkTheme()"><b-icon icon="theme-light-dark"></b-icon></b-button>
           </a>
           <a class="navbar-item">
-            <LanguageDropdown></LanguageDropdown>
+            <!--<LanguageDropdown></LanguageDropdown>-->
           </a>
         </div>
       </div>
@@ -48,12 +48,11 @@
 </template>
 
 <script>
-import FixedHeader from "vue-fixed-header";
-import LanguageDropdown from "../components/LanguageDropdown";
+import FixedHeader from "@/components/FixedHeader.vue";
 
 export default {
-  name: "navbar",
-  components: { LanguageDropdown, FixedHeader },
+  name: "NavbarComponent",
+  components: {  FixedHeader },
   methods: {
     mobileNavbar: function() {
       var burger = document.querySelector(".burger");

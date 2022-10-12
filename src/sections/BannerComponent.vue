@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "Banner",
+  name: "BannerComponent",
   methods: {
     typeMessage(str, elem) {
       return new Promise(resolve => {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-dropdown position="is-bottom-left" aria-role="list">
-      <button class="button" slot="trigger">
+      <button class="button">
         <b-icon icon="earth" size="is-small"></b-icon>
         <b-icon icon="menu-down"></b-icon>
       </button>
