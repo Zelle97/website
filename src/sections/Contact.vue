@@ -3,7 +3,7 @@
     <div
       class="container"
       data-aos="flip-up"
-      :data-aos-offset="200"
+      :data-aos-offset="80"
       data-aos-delay="100"
     >
       <div class="has-text-centered">

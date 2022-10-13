@@ -8,6 +8,7 @@ import VueScrollTo from "vue-scrollto";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import PersonalPage from "./pages/PersonalPage.vue"
+import BusinessPage from "./pages/BusinessPage.vue"
 
 Vue.use(VueScrollTo, {
   container: "body",
@@ -42,7 +43,9 @@ const i18n = new VueI18n({
 
 
 const routes = [
-  { path: '/', component: PersonalPage },
+  { path: '/personal', name: 'Personal', component: PersonalPage },
+  { path: '/business', name: 'Business', component: BusinessPage },
+  { path: '/', name: 'default', redirect: '/business' },
 ]
 
 const router = new VueRouter({

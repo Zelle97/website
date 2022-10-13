@@ -5,7 +5,7 @@
       <div class="level personal">
         <div class="level-item">
           <figure class="image personal-image">
-            <img class="is-rounded" src="../assets/personal_edited.png" />
+            <img class="is-rounded" src="../assets/personal.jpeg" />
           </figure>
         </div>
         <div class="container has-text-centered personal-text">
@@ -32,26 +32,15 @@ export default {
 
 <style scoped>
 .personal {
-  padding-top: 15vh;
+  padding-top: 20vh;
 }
 
 .personal-image {
-  max-width: 30vw;
+  max-width: 40vw;
 }
 
 .personal-text {
   max-width: 40vw;
-}
-
-.delayVisible {
-  animation: delayVisible 0s 3s forwards;
-  visibility: hidden;
-}
-
-@keyframes delayVisible {
-  to {
-    visibility: visible;
-  }
 }
 
 @media only screen and (max-width: 800px) {
