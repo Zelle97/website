@@ -61,7 +61,7 @@ export default {
 .bgimg {
   width: 100vw;
   height: 110vh;
-  background-image: url("../assets/banner_hotizontal_edited.jpeg");
+  background-image: url("../assets/banner_vertical_edited.jpeg");
   background-size: cover;
 
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -127,7 +127,7 @@ export default {
   .bgimg {
     width: 100vw;
     height: 110vh;
-    background-image: url("../assets/banner_hotizontal_edited.jpeg");
+    background-image: url("../assets/banner_vertical_edited.jpeg");
     background-size: cover;
 
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -156,7 +156,7 @@ export default {
   .bgimg {
     width: 100vw;
     height: 110vh;
-    background-image: url("../assets/banner_hotizontal_edited.jpeg");
+    background-image: url("../assets/banner_vertical_edited.jpeg");
     background-size: cover;
 
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */

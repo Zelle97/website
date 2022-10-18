@@ -1,21 +1,21 @@
 <template>
-    <div class="section">
-      <div class="container">
-        <span class="anchor" id="business"></span>
-        <div class="level business">
-          <div class="container has-text-centered business-text">
-            <h1 class="title">
-              {{ $t("business.header") }}
-            </h1>
-            <h2 class="subtitle">
-              <div class="content">
-                {{ $t("business.text") }}
-              </div>
-            </h2>
-          </div>
+  <div class="section">
+    <div class="container">
+      <span class="anchor" id="business"></span>
+      <div class="level business">
+        <div class="container has-text-centered business-text">
+          <h1 class="title">
+            {{ $t("business.header") }}
+          </h1>
+          <h2 class="subtitle">
+            <div class="content">
+              {{ $t("business.text") }}
+            </div>
+          </h2>
         </div>
-        <div class="level business-description">
-          <div class="level-item business-left">
+      </div>
+      <div class="level business-description">
+        <div class="level-item business-left">
           <div class="has-text-centered">
             <h1 class="title">
               {{ $t("business.left.header") }}
@@ -35,79 +35,78 @@
             </div>
           </div>
         </div>
-        </div>
-        
       </div>
-      <hr />
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: "Business"
-  };
-  </script>
-  
-  <style scoped>
-  .business {
-    margin-top: 10vh;
+    <hr />
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Business"
+};
+</script>
+
+<style scoped>
+.business {
+  margin-top: 10vh;
+}
+
+.business-description {
+  padding-top: 5vh;
+}
+.business-left {
+  max-width: 35vw;
+}
+.business-right {
+  max-width: 35vw;
+}
+
+.business-text {
+  max-width: 40vw;
+}
+
+.delayVisible {
+  animation: delayVisible 0s 3s forwards;
+  visibility: hidden;
+}
+
+@keyframes delayVisible {
+  to {
+    visibility: visible;
   }
-  
-  .business-description {
-    padding-top: 5vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .section-animated {
+    margin-bottom: 15vh;
+  }
+  .business-text {
+    max-width: 60vw;
   }
   .business-left {
-    max-width: 35vw;
+    max-width: 90vw;
+    padding-bottom: 5vh;
   }
   .business-right {
-    max-width: 35vw;
+    max-width: 90vw;
   }
-  
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section-animated {
+    margin-bottom: 50vh;
+  }
   .business-text {
-    max-width: 40vw;
+    max-width: 90vw;
   }
-  
-  .delayVisible {
-    animation: delayVisible 0s 3s forwards;
-    visibility: hidden;
+  .business-left {
+    max-width: 90vw;
+    padding-bottom: 5vh;
   }
-  
-  @keyframes delayVisible {
-    to {
-      visibility: visible;
-    }
+  .business-right {
+    max-width: 90vw;
   }
-  
-  @media only screen and (max-width: 800px) {
-    .section-animated {
-      margin-bottom: 15vh;
-    }
-    .business-text {
-      max-width: 60vw;
-    }
-    .business-left {
-      max-width: 90vw;
-      padding-bottom: 5vh;
-    }
-    .business-right {
-      max-width: 90vw;
-    }
-  }
-  
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-    .section-animated {
-      margin-bottom: 50vh;
-    }
-    .business-text {
-      max-width: 90vw;
-    }
-    .business-left {
-      max-width: 90vw;
-      padding-bottom: 5vh;
-    }
-    .business-right {
-      max-width: 90vw;
-    }
-  }
-  </style>
+}
+</style>

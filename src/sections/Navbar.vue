@@ -45,13 +45,21 @@
         </div>
         <div class="navbar-end">
           <a v-if="isPersonal" class="navbar-item">
-            <b-button><router-link to="/business" >About my Business!</router-link></b-button>
+            <b-button
+              ><router-link to="/business"
+                >About my Business!</router-link
+              ></b-button
+            >
           </a>
           <a v-if="!isPersonal" class="navbar-item">
-            <b-button><router-link to="/personal" >About Me!</router-link></b-button>
+            <b-button
+              ><router-link to="/personal">About Me!</router-link></b-button
+            >
           </a>
           <a class="navbar-item">
-            <b-button v-on:click="toogleDarkTheme()"><b-icon icon="theme-light-dark"></b-icon></b-button>
+            <b-button v-on:click="toogleDarkTheme()"
+              ><b-icon icon="theme-light-dark"></b-icon
+            ></b-button>
           </a>
           <a class="navbar-item">
             <LanguageDropdown></LanguageDropdown>
@@ -71,7 +79,7 @@ export default {
   components: { LanguageDropdown, FixedHeader },
   computed: {
     isPersonal() {
-       return this.$route.name === 'Personal'
+      return this.$route.name === "Personal";
     }
   },
   methods: {
@@ -85,8 +93,8 @@ export default {
       });
     },
     toogleDarkTheme: function() {
-      document.documentElement.classList.toggle('light');
-      document.documentElement.classList.toggle('dark');
+      document.documentElement.classList.toggle("light");
+      document.documentElement.classList.toggle("dark");
     }
   },
   mounted() {
@@ -119,5 +127,4 @@ export default {
     transform: translateY(0);
   }
 }
-
 </style>

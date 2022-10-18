@@ -5,10 +5,8 @@
 </template>
 
 <script>
-
-
 export default {
-  name: "app",
+  name: "app"
 };
 </script>
 
@@ -27,7 +25,7 @@ $theme-map-light: (
   $--custom-theme-background: #ffffff,
   $--custom-theme-text: #4a4a4a,
   $--custom-theme-text-light: #7a7a7a,
-  $--custom-theme-text-strong: #363636,
+  $--custom-theme-text-strong: #363636
 );
 
 // Override the default light theme
@@ -35,7 +33,7 @@ $theme-map-dark: (
   $--custom-theme-background: #353535,
   $--custom-theme-text: #aeaeae,
   $--custom-theme-text-light: #979797,
-  $--custom-theme-text-strong: #ffffff,
+  $--custom-theme-text-strong: #ffffff
 );
 
 @mixin spread-map($map: ()) {
@@ -80,7 +78,8 @@ $dropdown-item-hover-background-color: $scheme-main;
 $input-background-color: inherit;
 
 // Cards
-$card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3), 0 0px 0 1px rgba(10, 10, 10, 0.06);
+$card-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3),
+  0 0px 0 1px rgba(10, 10, 10, 0.06);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
@@ -121,7 +120,6 @@ $colors: (
     $danger-invert
   )
 );
-
 
 // Import Bulma and Buefy styles
 @import "~bulma";

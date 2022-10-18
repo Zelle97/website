@@ -1,5 +1,5 @@
-import Vue from 'vue/dist/vue.js';
-import VueRouter from "vue-router"
+import Vue from "vue/dist/vue.js";
+import VueRouter from "vue-router";
 import VueI18n from "vue-i18n";
 import Buefy from "buefy";
 import "buefy/dist/buefy.css";
@@ -7,8 +7,8 @@ import App from "./App.vue";
 import VueScrollTo from "vue-scrollto";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import PersonalPage from "./pages/PersonalPage.vue"
-import BusinessPage from "./pages/BusinessPage.vue"
+import PersonalPage from "./pages/PersonalPage.vue";
+import BusinessPage from "./pages/BusinessPage.vue";
 
 Vue.use(VueScrollTo, {
   container: "body",
@@ -41,16 +41,15 @@ const i18n = new VueI18n({
   messages
 });
 
-
 const routes = [
-  { path: '/personal', name: 'Personal', component: PersonalPage },
-  { path: '/business', name: 'Business', component: BusinessPage },
-  { path: '/', name: 'default', redirect: '/business' },
-]
+  { path: "/personal", name: "Personal", component: PersonalPage },
+  { path: "/business", name: "Business", component: BusinessPage },
+  { path: "/", name: "default", redirect: "/business" }
+];
 
 const router = new VueRouter({
-  routes, // short for `routes: routes`
-})
+  routes // short for `routes: routes`
+});
 
 new Vue({
   created() {

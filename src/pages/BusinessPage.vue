@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <Navbar></Navbar>
-        <banner></banner>
-        <business></business>
-        <contact></contact>
-        <Footer></Footer>
-    </div>
+  <div>
+    <Navbar></Navbar>
+    <banner></banner>
+    <business></business>
+    <contact></contact>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
@@ -16,16 +16,14 @@ import Navbar from "../sections/Navbar.vue";
 import Footer from "../components/Footer.vue";
 
 export default {
-    name: "BusinessPage",
-    components: { Banner, Contact, Business, Navbar, Footer },
-    data() {
-            return {
-                isOpen: false
-            }
-        }
+  name: "BusinessPage",
+  components: { Banner, Contact, Business, Navbar, Footer },
+  data() {
+    return {
+      isOpen: false
+    };
+  }
 };
 </script>
 
-<style>
-
-</style>
+<style></style>

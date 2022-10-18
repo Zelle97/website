@@ -1,17 +1,16 @@
 <template>
-    <div class="main">
-      <navbar></navbar>
-      <personal></personal>
-      <c-v></c-v>
-      <skills></skills>
-      <references></references>
-      <contact></contact>
-      <Footer></Footer>
-    </div>
-  </template>
+  <div class="main">
+    <navbar></navbar>
+    <personal></personal>
+    <c-v></c-v>
+    <skills></skills>
+    <references></references>
+    <contact></contact>
+    <Footer></Footer>
+  </div>
+</template>
 
 <script>
-
 import Navbar from "../sections/Navbar";
 import Contact from "../sections/Contact";
 import CV from "../sections/CV";

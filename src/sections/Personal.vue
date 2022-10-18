@@ -20,6 +20,10 @@
         </div>
       </div>
     </div>
+    <div class="arrow-down">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
     <hr />
   </div>
 </template>
@@ -31,6 +35,71 @@ export default {
 </script>
 
 <style scoped>
+.arrow-down {
+  width: 60px;
+  height: 40px;
+  margin: 0 0 0 -30px;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  animation: arrow 0.5s 1s infinite ease-out alternate;
+}
+
+.arrow-down:hover {
+  animation-play-state: paused;
+}
+
+.left {
+  position: absolute;
+  height: 10px;
+  width: 40px;
+  background: black;
+  transform: rotate(240deg);
+  top: 10px;
+  left: 10px;
+  border-radius: 4px;
+  transform-origin: 5px 50%;
+  animation: leftArrow 0.5s 1s infinite ease-out alternate;
+}
+
+.right {
+  position: absolute;
+  height: 10px;
+  width: 40px;
+  background: black;
+  transform: rotate(-60deg);
+  top: 10px;
+  left: 10px;
+  border-radius: 4px;
+  transform-origin: 5px 50%;
+  animation: rightArrow 0.5s 1s infinite ease-out alternate;
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
+
+@keyframes leftArrow {
+  0% {
+  }
+  100% {
+    transform: rotate(225deg);
+  }
+}
+
+@keyframes rightArrow {
+  0% {
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
 .personal {
   padding-top: 20vh;
 }
